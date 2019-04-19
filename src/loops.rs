@@ -45,7 +45,7 @@ pub fn fizzbuzz(){
     println!("\nThis is a for loop\n");
 
     // `n` will take the values: 1, 2, ..., 100 in each iteration
-    for n in 1..15 {
+    for n in 1..16 {
         if n % 15 == 0 {
             println!("fizzbuzz");
         } else if n % 3 == 0 {

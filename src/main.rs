@@ -1,5 +1,5 @@
-mod loops;
 mod data_types;
+mod loops;
 mod packages;
 
 fn main() {
@@ -22,8 +22,15 @@ fn main() {
     println!("-------------------------");
 
     loops::fizzbuzz();
-    
+
 
     packages::ferris();
 
+}
+macro_rules! five_times {
+    ($x:expr) => (5 * $x);
+}
+
+pub fn macros() {
+    assert_eq!(25, five_times!(2 + 3));
 }
