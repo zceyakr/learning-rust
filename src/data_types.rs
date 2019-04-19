@@ -8,7 +8,6 @@ pub fn basic_types(){
     const CONSTANT:i32 = 55555;
 
     let character = 'a';
-
     let face = '\u{1F600}';
 
     println!("{:?}", (x, y, boolean, CONSTANT, character, face));
@@ -36,7 +35,7 @@ pub fn tuple(){
 }
 
 pub fn shadowing(){
-    //shadowing
+
     let x = 3;
 
     let x = x + 2;
